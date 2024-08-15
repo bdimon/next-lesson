@@ -75,7 +75,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
   const amountInCents = amount * 100;
   const date = new Date().toISOString().split("T")[0];
   // Test it out:
-  console.log({ customerId, amountInCents, status });
+  // console.log({ customerId, amountInCents, status });
   //insert new invoice into DB
   try {
     await sql`
@@ -112,7 +112,7 @@ export async function updateInvoice(id: string, formData: FormData) {
   }
   
   // Test it out:
-  console.log({ customerId, amountInCents, status });
+  // console.log({ customerId, amountInCents, status });
   //insert new invoice into DB
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
