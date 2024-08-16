@@ -3,3 +3,5 @@
 This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+
+[auth][warn][env-url-basepath-redundant] Read more: https://warnings.authjs.dev#env-url-basepath-redundant - to prevent THIS - comment AUTH_URL in .env
